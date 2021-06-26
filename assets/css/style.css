@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Ubuntu&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #FFF5FD;
+    font-family: 'Ubuntu', sans-serif;
+    color: #005A8D;
+}
+
+.main {
+    text-align: center;
+}
+
+.heading-main {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 3em;
+    padding: 1em 0;
+
+
+}
+
+.project-cards {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card>img {
+    width: 70%;
+}
+
+.card {
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+}
+
+.card-head {
+    font-weight: bolder;
+    font-size: 1.2em;
+    padding: 10px 0;
+}
+
+.card-text {
+    width: 70%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 700px) {
+    .project-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
