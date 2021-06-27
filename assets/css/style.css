@@ -132,7 +132,7 @@ a:hover {
 
     animation: cardShake, cardShake, cardShake;
     animation-delay: 2s, 6s, 10s;
-    animation-duration: .3s;
+    animation-duration: .4s;
 }
 
 
