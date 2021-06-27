@@ -9,6 +9,7 @@ body {
     background-color: #FFF5FD;
     font-family: 'Ubuntu', sans-serif;
     color: #005A8D;
+    overflow-x: hidden;
 }
 
 .main {
@@ -20,8 +21,6 @@ body {
     text-align: center;
     font-size: 3em;
     padding: 1em 0;
-
-
 }
 
 .project-cards {
@@ -124,15 +123,26 @@ a:hover {
 
 .heading-main {
     animation: heading;
-    animation-duration: 1s;
-    animation-delay: .5s;
+    animation-duration: 1.3s;
+    animation-delay: 1s;
 }
 
 .card1 {
 
-    animation: cardShake, cardShake, cardShake;
-    animation-delay: 2s, 6s, 10s;
+    animation: cardShake, cardShake, cardShake, cardShake, cardShake, cardShake, cardShake, cardShake, cardShake;
+    animation-delay: 2s, 6s, 10s, 14s, 18s, 22s, 24s, 28s, 32s;
     animation-duration: .4s;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BEAEE2;
+    height: 9vh;
+    color: #F9F9F9;
+    font-size: 1.2em;
+    margin-top: 2em;
 }
 
 
