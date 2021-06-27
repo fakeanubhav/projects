@@ -65,6 +65,77 @@ a:hover {
     text-decoration: underline;
 }
 
+
+@keyframes cardShake {
+    0% {
+        transform: translate(10%);
+    }
+
+    10% {
+        transform: translate(0%);
+    }
+
+    20% {
+        transform: translate(-5%);
+    }
+
+    30% {
+        transform: translate(0%);
+    }
+
+    40% {
+        transform: translate(5%);
+    }
+
+    50% {
+        transform: translate(0%);
+    }
+
+    60% {
+        transform: translate(-5%);
+    }
+
+    70% {
+        transform: translate(0%);
+    }
+
+    80% {
+        transform: translate(5%);
+    }
+
+    90% {
+        transform: translate(0%);
+    }
+
+    100% {
+        transform: translate(-5%);
+    }
+}
+
+@keyframes heading {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.heading-main {
+    animation: heading;
+    animation-duration: 1s;
+    animation-delay: .5s;
+}
+
+.card1 {
+
+    animation: cardShake, cardShake, cardShake;
+    animation-delay: 2s, 6s, 10s;
+    animation-duration: .3s;
+}
+
+
 @media only screen and (max-width: 700px) {
     .project-cards {
         flex-direction: column;
